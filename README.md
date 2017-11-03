@@ -12,4 +12,6 @@ Você quer adicionar comportamento ou características em <b>objetos individuais
 
 ## A solução
 
-Esse padrão permite que você adicione responsabilidades a um objeto, não à interface a qual a classe desse objeto implementa. A interface deve permanecer intocada.
+Esse padrão permite que você adicione responsabilidades a um objeto, não à interface a qual a classe desse objeto implementa. A interface deve permanecer intocada. 
+
+O contexto em que um decorador é necessário é aquele em que temos um único componente básico, vários "embelezamentos" opcionais e uma interface que é comum a todos eles. Fazendo uma analogia, podemos pensar em uma lancheria em que temos um "x-coração", mas podem haver várias combinações para esse lanche como "sem salada", "com ovo extra", "com bacon", "com queijo duplo", etc. Nesse caso, não queremos criar uma subclasse para cada combinação (XCoracaoComQueijoDuploClass, XCoracaoComBaconClass, XCoracaoComQueijoDuploEBaconClass), o decorator faz com que não seja necessária a criação de uma nova implementação toda vez que surje um detalhe ("decoração") novo na implementação principal.
