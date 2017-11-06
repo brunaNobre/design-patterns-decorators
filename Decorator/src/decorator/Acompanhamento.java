@@ -14,5 +14,6 @@ public abstract class Acompanhamento extends Comida{
         this.comida = comida;
     }
     
+    
     abstract public String getDescricao();
 }
