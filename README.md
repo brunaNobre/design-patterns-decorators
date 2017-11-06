@@ -78,7 +78,8 @@ case 2:
 
 ## Estrutura básica (diagrama uml):
 
-![](https://github.com/brunaNobre/design-patterns-decorators/blob/master/400px-Decorator_UML_class_diagram.svg.png)
+![](https://github.com/brunaNobre/design-patterns-decorators/blob/master/400px-Decorator_UML_class_diagram.svg.png)<br>
+<i>Fonte: Wikipedia</i>
 
 <br>
 
