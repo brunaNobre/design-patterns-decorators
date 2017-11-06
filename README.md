@@ -75,6 +75,14 @@ case 2:
  break;
 
 ```
+
+## Estrutura básica (diagrama uml):
+
+![](https://github.com/brunaNobre/design-patterns-decorators/blob/master/400px-Decorator_UML_class_diagram.svg.png)
+
+<br>
+
+
 ## Enumeração dos pontos fortes:
 
 * Nos dá uma alternativa à criação de subclasses que proporciona flexibilidade.
