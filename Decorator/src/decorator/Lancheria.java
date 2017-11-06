@@ -5,7 +5,7 @@ import utilidades.Util;
 
 /**
  *
- * @author aluno
+ * @author Bruna Almeida
  */
 public class Lancheria {
 
