@@ -110,10 +110,10 @@ public class Lancheria {
 			
 		} while (opcao != 0);
                 
-                    System.out.println("Seu pedido é:");
+                    System.out.println("Obrigada. Dados do seu pedido:");
                     
                     if(comida != null) {
-                        System.out.println(comida.getDescricao() + " - " + comida.getPreco());
+                        System.out.println("Lanche: "+comida.getDescricao() + " - R$ " + comida.getPreco());
                     } else {
                         System.out.println("Nada hoje? Ok. Volte sempre!");
                     }
