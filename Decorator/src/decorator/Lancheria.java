@@ -92,7 +92,7 @@ public class Lancheria {
 
                                 if (!(comida instanceof Bacon)) {
                                     comida = new Bacon(comida);
-                                    System.out.println("Ovo adicionado!");
+                                    System.out.println("Bacon adicionado!");
                                     System.out.println("Mais alguma coisa?");
                                 } else {
                                     System.out.println("Opção já selecionada");
