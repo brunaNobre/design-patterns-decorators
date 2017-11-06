@@ -16,7 +16,7 @@ Esse padrão permite que você adicione responsabilidades a um objeto, não à i
 
 O contexto em que um decorador é necessário é aquele em que temos um único componente básico, vários "embelezamentos" opcionais e uma interface que é comum a todos eles. Fazendo uma analogia, podemos pensar em uma lancheria em que temos um "x-coração", mas podem haver várias combinações para esse lanche como "sem salada", "com ovo extra", "com bacon", "com queijo duplo", etc. Nesse caso, não queremos criar uma subclasse para cada combinação (XCoracaoComQueijoDuploClass, XCoracaoComBaconClass, XCoracaoComQueijoDuploEBaconClass), o decorator faz com que não seja necessária a criação de uma nova implementação toda vez que surje um detalhe ("decoração") novo na implementação principal.
 
-### Vê-se abaixo dois trechos de código que fazem a mesma coisa (adição de queijo-duplo no x-salada), o primeiro usando o padrão decorator e o segundo não, para ilustrar a gambiarra estratosférica que pode ser criada, em alguns casos, se não nos beneficiamos de padrões de desenvolvimento:
+### Vê-se abaixo dois trechos de código que fazem a mesma coisa (adição de queijo-duplo no x-salada), o primeiro fazendo parte de um projeto que está usando o padrão decorator e o segundo não, para ilustrar a gambiarra estratosférica que pode ser criada, em alguns casos, se não nos beneficiamos de padrões de desenvolvimento:
 
 #### Com decorator:
 
