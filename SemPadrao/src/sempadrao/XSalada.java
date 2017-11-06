@@ -5,10 +5,16 @@
  */
 package sempadrao;
 
-/**
- *
- * @author android
- */
-public class XCoracao {
+
+public class XSalada extends Comida {
+    
+    public XSalada(){
+        descricao = "X-salada";
+    }
+ 
+    @Override
+    public double getPreco() {
+        return 12.0;
+    }
     
 }

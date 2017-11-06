@@ -5,17 +5,16 @@
  */
 package sempadrao;
 
-/**
- *
- * @author aluno
- */
-public abstract class Comida {
+
+public class XSaladaComOvoEBacon extends Comida {
     
-    String descricao = "-";
-    
-    public String getDescricao() {
-        return descricao;
+    public XSaladaComOvoEBacon(){
+        descricao = "X-salada, com ovo, com bacon";
+    }
+ 
+    @Override
+    public double getPreco() {
+        return 15.0;
     }
     
-    public abstract double getPreco();
 }
