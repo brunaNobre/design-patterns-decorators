@@ -1,5 +1,6 @@
 package decorator;
 
+import java.util.ArrayList;
 import utilidades.Util;
 
 /**
@@ -10,7 +11,9 @@ public class Lancheria {
 
     public void menu() {
         int opcao = 0;
-        Comida comida = null;
+        
+        
+        ArrayList<Comida> lanches = new ArrayList();
 
         MENU:
         do {
@@ -28,25 +31,30 @@ public class Lancheria {
 
             switch (opcao) {
                 case 1:
-                    comida = new Bauru();
+                    lanches.add(new Bauru());
+                    //comida = new Bauru();
                     System.out.println("Bauru na chapa!");
                     System.out.println("Acompanhamentos? Se sim, digite 4.");
                     break;
                 case 2:
-                    comida = new XSalada();
+                    lanches.add(new XSalada());
+                    //comida = new XSalada();
                     System.out.println("X Salada na chapa!");
                     System.out.println("Acompanhamentos? Se sim, digite 4.");
                     break;
                 case 3:
-                    comida = new XCoracao();
+                    lanches.add(new XCoracao());
+                    //comida = new XCoracao();
                     System.out.println("X Coração na chapa!");
                     System.out.println("Acompanhamentos? Se sim, digite 4.");
                     break;
                 case 4:
                     int acomp = 0;
+                    Comida comida = lanches.get((lanches.size()) -1);
 
                     ACOMPANHAMENTOS:
                     while (acomp != 9) {
+                        System.out.println("\n");
                         System.out.println("Escolha o acompanhamento:");
                         System.out.println("1- Ovo");
                         System.out.println("2- Queijo duplo");
@@ -109,12 +117,15 @@ public class Lancheria {
 
         } while (opcao != 0);
 
+        System.out.println("\n");
         System.out.println("Obrigada. Dados do seu pedido:");
 
-        if (comida != null) {
-            System.out.println("Lanche: " + comida.getDescricao() + " - R$ " + comida.getPreco());
+        if (lanches.isEmpty()) {
+           System.out.println("Nada hoje? Ok. Volte sempre!");
         } else {
-            System.out.println("Nada hoje? Ok. Volte sempre!");
+            for (int i = 0; i < lanches.size(); i++) {
+                System.out.println("Lanche: " + lanches.get(i).getDescricao() + " - R$ " + lanches.get(i).getPreco());
+            }
         }
 
     }
