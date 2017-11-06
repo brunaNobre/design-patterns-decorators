@@ -83,7 +83,7 @@ case 2:
 
 <br>
 
-Usando o exemplo da lancheria: <br>
+<b> Usando o exemplo da lancheria: </b> <br>
 ![](https://github.com/brunaNobre/design-patterns-decorators/blob/master/Class%20Diagram0.png)<br>
 
 ## Enumeração dos pontos fortes:
