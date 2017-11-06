@@ -15,15 +15,7 @@ public class Principal {
         
         new Lancheria().menu();
 
-        //Comida comida = new XCoracao();
 
-        //comida = new QueijoDuplo(comida);
-
-        //comida = new Bacon(comida);
-
-      
-
-        //System.out.println(comida.getDescricao() + " - " + comida.getPreco());
     }
 
 }
