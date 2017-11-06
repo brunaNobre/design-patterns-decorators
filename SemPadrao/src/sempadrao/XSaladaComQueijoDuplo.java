@@ -9,15 +9,14 @@ package sempadrao;
  *
  * @author android
  */
-public class Principal {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        
-        
-        new Lancheria().menu();
-    }
+public class XSaladaComQueijoDuplo extends Comida{
     
+        public XSaladaComQueijoDuplo(){
+        descricao = "X-salada, com queijo duplo";
+    }
+ 
+    @Override
+    public double getPreco() {
+        return 12.5;
+    }
 }
