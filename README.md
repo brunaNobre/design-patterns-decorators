@@ -15,3 +15,63 @@ Você quer adicionar comportamento ou características em <b>objetos individuais
 Esse padrão permite que você adicione responsabilidades a um objeto, não à interface a qual a classe desse objeto implementa. A interface deve permanecer intocada. 
 
 O contexto em que um decorador é necessário é aquele em que temos um único componente básico, vários "embelezamentos" opcionais e uma interface que é comum a todos eles. Fazendo uma analogia, podemos pensar em uma lancheria em que temos um "x-coração", mas podem haver várias combinações para esse lanche como "sem salada", "com ovo extra", "com bacon", "com queijo duplo", etc. Nesse caso, não queremos criar uma subclasse para cada combinação (XCoracaoComQueijoDuploClass, XCoracaoComBaconClass, XCoracaoComQueijoDuploEBaconClass), o decorator faz com que não seja necessária a criação de uma nova implementação toda vez que surje um detalhe ("decoração") novo na implementação principal.
+
+### Vê-se abaixo dois trechos de código que fazem a mesma coisa (adição de queijo-duplo no x-salada), o primeiro usando o padrão decorator e o segundo não, para ilustrar a gambiarra estratosférica que pode ser criada, em alguns casos, se não nos beneficiamos de padrões de desenvolvimento:
+
+#### Com decorator:
+
+```
+case 2:
+   if (!(comida instanceof QueijoDuplo)) {
+
+        comida = new QueijoDuplo(comida);
+        System.out.println("Queijo duplo adicionado!");
+        System.out.println("Mais alguma coisa?");
+        
+        } else {
+           
+           System.out.println("Opção já selecionada");
+        }
+
+ break;
+
+```
+
+
+#### Sem padrão:
+
+```
+case 2:
+
+    if (!(comida instanceof XSaladaComQueijoDuplo
+         || comida instanceof XSaladaComOvoEBaconEQueijoDuplo
+         || comida instanceof XSaladaComQueijoDuploEOvo
+         || comida instanceof XSaladaComQueijoDuploEBacon)) {
+
+         if(comida instanceof XSaladaComBacon) {
+             
+             comida = new XSaladaComQueijoDuploEBacon();
+          
+          } else if (comida instanceof XSaladaComOvo) {
+                              
+             comida = new XSaladaComQueijoDuploEOvo();
+                                      
+          } else if (comida instanceof XSaladaComOvoEBacon) {
+                                          
+             comida = new XSaladaComOvoEBaconEQueijoDuplo();
+                                      
+          } else {
+              
+             comida = new XSaladaComQueijoDuplo();
+          }
+
+         System.out.println("Queijo duplo adicionado!");
+         System.out.println("Mais alguma coisa?");
+                                 
+     } else {
+         System.out.println("Opção já selecionada");
+     }
+
+ break;
+
+```
