@@ -95,3 +95,9 @@ case 2:
 * É uma solução muito boa para problemas de permutação (combinações) porque podemos anexar um componente base a um número indefinido de decoradores.
 
 * Dá suporte ao princípio que diz que classes devem ser abertas à extensão mas fechadas para modificação.
+
+## Enumeração dos pontos fracos:
+
+* Maior número de classes utilizadas no projeto quando comparado com a versão que tinha somente mais atributos e métodos na classe base para a implementação das funcionalidades extras;
+* Pode prejudicar a leitura e manutenção do projeto caso muitas classes a mais forem necessárias;
+* Pode diminuir a eficiência do projeto caso muitas classes decoradoras forem necessárias para um componente abstrato com muitos métodos públicos (lembrando que classes decoradoras têm que ter a mesma interface pública que classes componente concreto).
