@@ -96,8 +96,9 @@ Todas as informações acima foram retiradas do site da Devmedia em um artigo qu
 ## Estrutura básica (diagrama uml):
 
 ![](https://github.com/brunaNobre/design-patterns-decorators/blob/master/400px-Decorator_UML_class_diagram.svg.png)<br>
+<i>Fonte: Wikipedia</i><br>
 <i><b>Figura 2:</b> Exemplo de diagrama de classes do padrão decorator</i>
-<i>Fonte: Wikipedia</i>
+
 
 <br>
 
