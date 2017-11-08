@@ -126,3 +126,8 @@ Todas as informações acima foram retiradas do site da Devmedia em um artigo qu
 * Os decoradores podem complicar o processo de instanciar o componente, porque não é preciso apenas  instanciar o componente, mas também envolvê-lo em vários decoradores.
 
 * Pode ser complicado ter decoradores que acompanhem outros decoradores, porque olhar para trás em múltiplas camadas da cadeia decoradora começa a empurrar o padrão do decorador para além da sua verdadeira intenção.
+
+
+## Outras API's que utilizam Decorator:
+* [Angular JS](https://angularjs.org/): Framework Javascript;
+* [Draft JS](https://draftjs.org/): Framework Javascript para desenvolvimento de um editor de texto.
