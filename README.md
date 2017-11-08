@@ -118,7 +118,7 @@ Todas as informações acima foram retiradas do site da Devmedia em um artigo qu
 ## Enumeração dos pontos fracos:
 
 
-* Se houver uso intensivo de decoradores isso irá gerar uma infinidade de pequenos objetos, que por sua vez acabam dificultando a manutenção do projeto.
+* Se houver uso intensivo de decoradores isso irá gerar uma infinidade de pequenos objetos, que por sua vez acabam dificultando a manutenção do projeto em questão de entendimento e depuração.
 
 * O decorador e o objeto incluso não têm a mesma identidade. Portanto, é importante tomar cuidado com a identidade de objetos: um decorador adicionado a um objeto vai mudar o objeto com o qual o cliente lida (em termos de identidade)
 
