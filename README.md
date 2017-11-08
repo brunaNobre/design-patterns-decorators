@@ -76,35 +76,34 @@ case 2:
 
 ```
 
-## Uso do Padrão Decorator no Java
-O Java também utiliza bastante o padrão de projeto Decorator. A API java.io é amplamente baseada nesse padrão de projeto.
-
-Os objetos da API java.io que tipicamente usam esse objeto são os bem conhecidos LineNumberInputStream, BufferedInputStream e FileInputStream. Abaixo veja como eles estão decorados:
-
-![](https://github.com/brunaNobre/design-patterns-decorators/blob/master/PadraoDecorator_Java2.jpg)<br>
-<i><b>Figura 1:</b> Organização típica do padrão decorator para os objetos acima</i>
-
-Na figura acima temos que LineNumberInputStream é um decorador concreto que tem como função contar as linhas de um determinado arquivo. O BufferInputStream também é um decorador concreto que tem como objetivo colocar a entrada em buffer para melhorar o desempenho e também oferece o método readLine() que lê a entrada baseada em caracteres linha por linha. Por fim FileInputStream é quem está sendo decorado (componente concreto no diagrama de classe) e oferece um componente básico através do qual os bytes serão lidos.
-
-Todas as informações acima foram retiradas do site da Devmedia em um artigo que fala sobre o [Padrão de Projeto Decorator em Java](https://www.devmedia.com.br/padrao-de-projeto-decorator-em-java/26238).
-
-
-
-
 
 
 ## Estrutura básica (diagrama uml):
 
 ![](https://github.com/brunaNobre/design-patterns-decorators/blob/master/400px-Decorator_UML_class_diagram.svg.png)<br>
 <i>Fonte: Wikipedia</i><br>
-<i><b>Figura 2:</b> Exemplo de diagrama de classes do padrão decorator</i>
+<i><b>Figura 1:</b> Exemplo de diagrama de classes do padrão decorator</i>
 
 
 <br>
 
 <b> Usando o exemplo da lancheria: </b> <br>
 ![](https://github.com/brunaNobre/design-patterns-decorators/blob/master/Class%20Diagram0.png)<br>
-<i><b>Figura 3:</b> Exemplo de diagrama de classes do padrão decorator voltado para o exemplo da lancheria</i>
+<i><b>Figura 2:</b> Exemplo de diagrama de classes do padrão decorator voltado para o exemplo da lancheria</i>
+
+
+## Uso do Padrão Decorator no Java
+O Java também utiliza bastante o padrão de projeto Decorator. A API java.io é amplamente baseada nesse padrão de projeto.
+
+Os objetos da API java.io que tipicamente usam esse objeto são os bem conhecidos LineNumberInputStream, BufferedInputStream e FileInputStream. Abaixo veja como eles estão decorados:
+
+![](https://github.com/brunaNobre/design-patterns-decorators/blob/master/PadraoDecorator_Java2.jpg)<br>
+<i><b>Figura 3:</b> Organização típica do padrão decorator para os objetos acima</i>
+
+Na figura acima temos que LineNumberInputStream é um decorador concreto que tem como função contar as linhas de um determinado arquivo. O BufferInputStream também é um decorador concreto que tem como objetivo colocar a entrada em buffer para melhorar o desempenho e também oferece o método readLine() que lê a entrada baseada em caracteres linha por linha. Por fim FileInputStream é quem está sendo decorado (componente concreto no diagrama de classe) e oferece um componente básico através do qual os bytes serão lidos.
+
+Todas as informações acima foram retiradas do site da Devmedia em um artigo que fala sobre o [Padrão de Projeto Decorator em Java](https://www.devmedia.com.br/padrao-de-projeto-decorator-em-java/26238).
+
 
 ## Enumeração dos pontos fortes:
 
