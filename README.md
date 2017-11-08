@@ -118,13 +118,9 @@ Todas as informações acima foram retiradas do site da Devmedia em um artigo qu
 ## Enumeração dos pontos fracos:
 
 
-* Os decoradores podem resultar em muitos objetos pequenos no design do projeto, e o uso excessivo pode ser complexo.
+* Se houver uso intensivo de decoradores isso irá gerar uma infinidade de pequenos objetos, que por sua vez acabam dificultando a manutenção do projeto.
 
-* Os decoradores podem causar problemas se o cliente depende fortemente dos objetos do tipo concreto.
-
-* Os decoradores podem complicar o processo de instanciar o componente, porque não é preciso apenas  instanciar o componente, mas também envolvê-lo em vários decoradores.
-
-* Pode ser complicado ter decoradores que acompanhem outros decoradores, porque olhar para trás em múltiplas camadas da cadeia decoradora começa a empurrar o padrão do decorador para além da sua verdadeira intenção.
+* O decorador e o objeto incluso não têm a mesma identidade. Portanto, é importante tomar cuidado com a identidade de objetos: um decorador adicionado a um objeto vai mudar o objeto com o qual o cliente lida (em termos de identidade)
 
 
 ## API's que utilizam Decorator:
