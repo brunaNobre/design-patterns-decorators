@@ -98,6 +98,11 @@ case 2:
 
 ## Enumeração dos pontos fracos:
 
-* Maior número de classes utilizadas no projeto quando comparado com a versão que tinha somente mais atributos e métodos na classe base para a implementação das funcionalidades extras;
-* Pode prejudicar a leitura e manutenção do projeto caso muitas classes a mais forem necessárias;
-* Pode diminuir a eficiência do projeto caso muitas classes decoradoras forem necessárias para um componente abstrato com muitos métodos públicos (lembrando que classes decoradoras têm que ter a mesma interface pública que classes componente concreto).
+
+* Os decoradores podem resultar em muitos objetos pequenos no nosso design, e o uso excessivo pode ser complexo.
+
+* Os decoradores podem causar problemas se o cliente depende fortemente dos objetos do tipo concreto.
+
+* Os decoradores podem complicar o processo de instanciar o componente porque você não precisa apenas  instanciar o componente, mas também envolve-lo em vários decoradores.
+
+* Pode ser complicado ter decoradores que acompanhem outros decoradores, porque olhar para trás em múltiplas camadas da cadeia decoradora começa a empurrar o padrão do decorador para além da sua verdadeira intenção.
