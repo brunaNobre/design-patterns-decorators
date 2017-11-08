@@ -105,7 +105,7 @@ Na figura acima temos que LineNumberInputStream é um decorador concreto que tem
 Todas as informações acima foram retiradas do site da Devmedia em um artigo que fala sobre o [Padrão de Projeto Decorator em Java](https://www.devmedia.com.br/padrao-de-projeto-decorator-em-java/26238).
 
 
-## Enumeração dos pontos fortes:
+## Pontos fortes:
 
 * Nos dá uma alternativa à criação de subclasses que proporciona flexibilidade.
 
@@ -115,7 +115,7 @@ Todas as informações acima foram retiradas do site da Devmedia em um artigo qu
 
 * Dá suporte ao princípio que diz que classes devem ser abertas à extensão mas fechadas para modificação.
 
-## Enumeração dos pontos fracos:
+## Pontos fracos:
 
 
 * Se houver uso intensivo de decoradores isso irá gerar uma infinidade de pequenos objetos, que por sua vez acabam dificultando a manutenção do projeto em questão de entendimento e depuração.
