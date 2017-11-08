@@ -90,7 +90,7 @@ case 2:
 
 * Nos dá uma alternativa à criação de subclasses que proporciona flexibilidade.
 
-* Permite modificação de comportamento em tempo de execução ao invés de voltar ao codigo de uma classe existente e fazer modificacoes.
+* Permite modificação de comportamento em tempo de execução ao invés de voltar ao codigo de uma classe existente e fazer modificações
 
 * É uma solução muito boa para problemas de permutação (combinações) porque podemos anexar um componente base a um número indefinido de decoradores.
 
