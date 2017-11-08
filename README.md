@@ -2,7 +2,7 @@
 Explicação do padrão de desenvolvimento DECORATOR para a disciplina Engenharia de Software III - Senac Fatec Pelotas
 
 
-Padrões de desenvolvimento, comumente chamados de design patterns, são criados quando nos deparamos com problemas recorrentes, aqueles pelos quais a maioria dos desenvolvedores de software se deparam na maioria das vezes. Entre os vários design patterns existentes temos o decorator.
+Padrões de desenvolvimento, comumente chamados de design patterns, são criados quando nos deparamos com problemas recorrentes, aqueles pelos quais a maioria dos desenvolvedores de software se deparam na maioria das vezes. Entre os vários design patterns existentes temos o decorator, que é um padrão de desenvolvimento de estrutura.
 
 O decorator surge como uma alternativa à criação de subclasses quando queremos estender as funcionalidades de uma classe. Usamos esse padrão para adicionar responsabilidades a um objeto dinamicamente.
 
