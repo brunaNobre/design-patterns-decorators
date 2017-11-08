@@ -1,0 +1,30 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package sempadraoalternativo;
+
+/**
+ *
+ * @author android
+ */
+public class XSalada extends Comida {
+
+    public XSalada() {
+        descricao = "X-salada";
+    }
+    
+    @Override
+    public String getDescricao() {
+        return descricao + (super.getDescricao());
+    }
+
+    @Override
+    public double getPreco() {
+      
+        
+        
+        return 12.0 + (super.getPreco());
+    }
+}
