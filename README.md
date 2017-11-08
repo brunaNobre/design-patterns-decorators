@@ -128,6 +128,7 @@ Todas as informações acima foram retiradas do site da Devmedia em um artigo qu
 * Pode ser complicado ter decoradores que acompanhem outros decoradores, porque olhar para trás em múltiplas camadas da cadeia decoradora começa a empurrar o padrão do decorador para além da sua verdadeira intenção.
 
 
-## Outras API's que utilizam Decorator:
+## API's que utilizam Decorator:
 * [Angular JS](https://angularjs.org/): Framework Javascript;
 * [Draft JS](https://draftjs.org/): Framework Javascript para desenvolvimento de um editor de texto.
+* [ES7 Decorators](https://github.com/wycats/javascript-decorators): Api Javascript
