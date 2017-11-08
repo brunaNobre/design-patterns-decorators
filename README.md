@@ -20,7 +20,7 @@ O contexto em que um decorador é necessário é aquele em que temos um único c
 
 #### Com decorator:
 
-```
+```java
 case 2:
    if (!(comida instanceof QueijoDuplo)) {
 
@@ -40,7 +40,7 @@ case 2:
 
 #### Sem padrão:
 
-```
+```java
 case 2:
 
     if (!(comida instanceof XSaladaComQueijoDuplo
